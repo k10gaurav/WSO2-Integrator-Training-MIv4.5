@@ -1,0 +1,14 @@
+openapi: 3.0.1
+info:
+  title: WelcomeAPI
+  description: API Definition of WelcomeAPI
+  version: 1.0.0
+servers:
+- url: http://localhost:8290/welcome
+- url: https://localhost:8253/welcome
+paths:
+  /wso2:
+    get:
+      responses:
+        default:
+          description: Default response

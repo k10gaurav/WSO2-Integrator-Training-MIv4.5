@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<api context="/welcome" name="WelcomeAPI" xmlns="http://ws.apache.org/ns/synapse">
+    <resource methods="GET" uri-template="/wso2">
+        <inSequence>
+            <payloadFactory description="Welcome meesage!" media-type="json" template-type="default">
+                <format>{"message":"Welcome to WSO2 Integrator MIv4"}</format>
+            </payloadFactory>
+            <respond/>
+        </inSequence>
+        <faultSequence>
+        </faultSequence>
+    </resource>
+</api>
